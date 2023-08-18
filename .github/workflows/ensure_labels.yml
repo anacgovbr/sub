@@ -4,6 +4,7 @@ on: [push]
 jobs:
   ensure_labels:
     runs-on: ubuntu-latest
+    permissions: wriwrite-all
     steps:
     - name: Create labels
       uses: actions/github-script@v6
